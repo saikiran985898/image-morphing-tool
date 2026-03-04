@@ -1,0 +1,25 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
