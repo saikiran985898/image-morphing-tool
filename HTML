@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Morphing Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Image Morphing Tool</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    <label>Upload First Image:</label>
+    <input type="file" name="image1" required><br><br>
+
+    <label>Upload Second Image:</label>
+    <input type="file" name="image2" required><br><br>
+
+    <label>Morph Level (0 to 1):</label>
+    <input type="number" name="alpha" step="0.1" min="0" max="1" value="0.5"><br><br>
+
+    <button type="submit">Morph Images</button>
+</form>
+
+{% if result_image %}
+<h2>Result:</h2>
+<img src="{{ result_image }}" width="500">
+{% endif %}
+
+</body>
+</html>
